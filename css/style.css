@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+    overflow-y:scroll;
+}
+
+/* Intento Fallido de usar un archivo tts para mi fuente
+    
+    @font-face{
+    font-family: "myFirstFont";
+    src: url(../resources/helvetica-black-black_SBCwG/helvetica-black/helvetica-black.ttf);
+} */
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("../resources/wallpaperbetter.com_7680x4320.jpg");
+    /* height: 100%;
+    width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    color: rgba(179, 15, 15, 0.7);  
+}
+
+.main-logo{
+    width: 15vh;
+}
+
+.flex-father{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 18vh;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(179, 15, 15, 0.7);
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .menu-noImage{
+    margin: 25px;
+} 
+.menu-image{
+    margin: 0px 25px 0px 25px;
+}
+
+footer{
+    height: 20vh;
+    color: rgba(179, 15, 15, 0.7);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 82%, rgba(0,212,255,0) 100%);
+}
+
+main{
+    height: 150vh;
+}
+
+
+.flex-main_logo{
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+}
+.flex-main_text{
+    display: flex;
+    justify-content: center;
+    padding-top: 410px;
+    font-size: 25px;
+}
+
+ /* .logo-image{
+     margin: 25px;
+}  */
+
+.flex-purchease_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.purchease-grid__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    /* gap: 15px 15px; */
+    /* grid-auto-flow: row; */
+    grid-template-areas:
+        "purchease-standard_edition purchease-premium_edition purchease-collectors_edition";
+    height: 80vh;
+    justify-items: center;
+    align-items: start;
+}
