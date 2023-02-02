@@ -48,7 +48,7 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
- .menu-noImage{
+.menu-noImage{
     margin: 25px;
 } 
 .menu-image{
@@ -151,8 +151,19 @@ main{
         padding: 5px;
         border-radius: 8px;
     }
-    .header{
+    .flex-father{
+        list-style: none;
+        font-size: 15px;
 
+    }
+    .main-logo{
+        width: 10vh;
+    }
+    .menu-noImage{
+        margin: 20px;
+    } 
+    .menu-image{
+        margin: 0px 20px 0px 20px;
     }
 }
 
@@ -168,5 +179,17 @@ main{
         padding: 5px;
         border-radius: 8px;
     }
-
+    .flex-father{
+        list-style: none;
+        font-size: 10px;
+    }
+    .main-logo{
+        width: 8vh;
+    }
+    .menu-noImage{
+        margin: 15px;
+    } 
+    .menu-image{
+        margin: 0px 15px 0px 15px;
+    }
 }
