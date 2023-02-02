@@ -83,7 +83,7 @@ main{
      margin: 25px;
 }  */
 
-.flex-purchease_title{
+.flex-purchase_title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,15 +91,82 @@ main{
     padding-bottom: 10vh;
 }
 
-.purchease-grid__container {
+.purchase-grid__container {
     display: grid;
+    margin: 16px;
+    font-size: 20px;
+    border: 3px solid black;
+    background-color: rgba(22, 17, 17, 0.7);
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr ;
-    /* gap: 15px 15px; */
-    /* grid-auto-flow: row; */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "purchease-standard_edition purchease-premium_edition purchease-collectors_edition";
+        "purchase-standard_edition purchase-premium_edition purchase-collectors_edition"
+        "standard-fullgame premium-fullgame collectors-fullgame"
+        "standard-cosmetic premium-cosmetic collectors-cosmetic"
+        "standard-currency premium-currency collectors-currency"
+        "standard-ost premium-ost collectors-ost"
+        "standard-physical premium-physical collectors-physical"
+        "standard-price premium-price collectors-price"
+        "standard-purchase premium-purchase collectors-purchase";
     height: 80vh;
     justify-items: center;
-    align-items: start;
+    align-items: center;
+    
+}
+
+.purchase-options{
+    font-size: 25px;
+}
+.purchase-notincluded{
+    text-decoration: line-through;
+}
+
+.purchase-button{
+    background-color: rgba(145, 39, 7, 0.7);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    transition-duration: 0.1s;
+}
+
+.purchase-button:hover{
+    background-color: rgba(221, 60, 10, 0.7);
+}
+
+.purchase-button:active{
+    background-color: rgba(255, 60, 10, 0.7);
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+     .purchase-grid__container{
+        font-size: 12px;
+    }
+    .purchase-options{
+        font-size: 18px;
+    }
+    .purchase-button{
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    .header{
+
+    }
+}
+
+@media (max-width: 425px){
+    .purchase-grid__container{
+        font-size: 10px;
+    }
+    .purchase-options{
+        font-size: 15px;
+    }
+    .purchase-button{
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
 }
